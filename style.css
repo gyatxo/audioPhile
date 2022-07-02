@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Square+Peg&display=swap');
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-img {
+    background-image: url('./assets/bg-img.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 1440px;
+    position: absolute;
+    z-index: -1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 5px 0px;
+}
+
+.container {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.logo {
+    color: #F4881D;
+    font-family: 'Square Peg', cursive;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 92px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.nav-links li a:hover {
+    color: #F4881D;
+}
+
+.cart {
+    border: none;
+    background: transparent;
+}
+
+.cart i {
+    color: white;
+    font-size: 30px;
+}
+.cart i:hover {
+    color: #F4881D;
+    cursor: pointer;
+}
+
+
+
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 619px;
+    width: 50%;
+    row-gap: 25px;
+}
+
+.landing-page .title {
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 23px;
+    letter-spacing: 0.7em;
+    color: gray;
+}
+
+.landing-page .name {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0.05em;
+    color: white;
+}
+
+.landing-page .desc {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    color: gray;
+}
+
+.landing-page .btn {
+    background-color: #F4881D;
+    border-radius: 2px;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+}
+.btn:hover {
+    background-color: white;
+    color: #F4881D;
+    cursor: pointer;
+}
+
+
+.category {
+    margin-top: 195px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 335px;
+    height: 250px;
+    background-color:#F1F1F1;
+}
+
+.product-img {
+    position: absolute;
+    width: 335px;
+    height: 250px;
+    top: -100px;
+}
+
+.category .name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.category .btn {
+    border: none;
+    padding: 10px 20px;
+    color: gray;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.category .btn:hover {
+    background-color: transparent;
+    color: #F4881D;
+}
+
+.speakers {
+    display: flex;
+    justify-content: flex-end;
+    height: 550px;
+    position: relative;
+    background-color: #F4881D;
+    padding-right: 80px;
+}
+
+.speakers img {
+    width: 400px;
+    /* height: 550px; */
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    left: 50px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 35%;
+    height: 100%;
+    z-index: 1;
+    margin: 0;
+}
+
+.speakers .name {
+    font-size: 50px;
+    font-weight: 7000;
+    line-height: 59px;
+    letter-spacing: 0.05em;
+    color: white;
+}
+
+.speakers .desc {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #F1F1F1;
+}
+
+.speakers .btn {
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23x;
+}
+.speakers .btn:hover {
+    background-color: #F1F1F1;
+    color: #F4881D;
+}
+
+.middle {
+    background-image: url('./assets/speakers.jpg');
+    height: 275px;
+    width: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin: 100px 0px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+    gap: 10px;
+}
+
+.name {
+    font-size: 40px;
+    font-weight: 7000;
+    line-height: 59px;
+    letter-spacing: 0.05em;
+    color: black;
+}
+
+.btn {
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23x;
+}
+.btn:hover {
+    color: #F4881D;
+}
+
+.last {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+.last img {
+    width: 49%;
+}
+
+.p-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 49%;
+    background-color: #F1F1F1;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+.left {
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 60px;
+    height: 506px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+}
+
+.right{
+    width: 50%;
+}
+
+.right img {
+    width: 100%;
+}
+
+.left .title {
+    align-self: center;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 58px;
+}
+
+.left .desc {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 23px;
+}
+
+footer {
+    background-color: black;
+    height: 450px;
+}
+
+.footer {
+    max-width: 1024px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+}
+
+.f-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+footer .desc {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    color: #F1F1F1;
+}
+
+footer .copyright {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.f-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-end;
+    padding: 20px 0px;
+    gap: 150px;
+}
+
+.icons img {
+    margin: 0px 5px;
+}
+
+.f-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.f-links li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.f-links li a:hover {
+    color: #F4881D;
+}
